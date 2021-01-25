@@ -1,0 +1,131 @@
+body {
+  background: rgb(7, 7, 7);
+  height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{
+    transform: translate(-50%, -46%);
+  }
+  50%{
+    transform: translate(-50%, -54%);
+  }
+  100%{
+    transform: translate(-50%, -46%);
+  }
+}
+
+.scene i{
+  position: fixed;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate linear infinite;
+  z-index: 0;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  10%,90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.title{
+  font-family: 'Jura', sans-serif;
+  font-size: 128px;
+  color: #fff;
+}
+
+// Fixed Planets
+
+.padding-planets{
+  padding: 350px 0 350px 0;
+}
+
+.sol-img{
+  min-height: 700px;
+  min-width: 700px;
+}
+
+.sol{
+    position: absolute;
+    top: 800px;
+    right: 60%;
+  }
+
+
+.mercurio{
+  height: 40px;
+}
+
+.venus{
+  height: 50px;
+}
+
+.terra{
+  height: 50px;
+}
+
+.marte{
+  height: 40px;
+}
+
+.jupiter{
+  height: 100px;
+}
+
+.saturno{
+  height: 70px;
+}
+
+.urano{
+  height: 60px;
+}
+
+.netuno{
+  height: 50px;
+}
+
+.btns{
+  position: absolute; 
+  bottom: 80px;     
+  right: 0;
+  left: 0;
+  a{
+    border: 1.5px solid #fff;
+    color: #fff;
+    padding: 25px 30px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: .5s;
+    &:hover{
+      color: #000;
+      background-color: #fff;
+      box-shadow: 0 0 5px #fff,
+                  0 0 25px #fff,
+                  0 0 50px #fff,
+                  0 0 100px #fff;
+    }
+  }
+}
+
+.icon{
+  margin-top: 10px;
+}
+

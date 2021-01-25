@@ -1,0 +1,173 @@
+body {
+  background: #070707;
+  height: 100vh;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: float 4s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+
+.scene i {
+  position: fixed;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-animation: animate linear infinite;
+          animation: animate linear infinite;
+  z-index: 0;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+.title {
+  font-family: 'Jura', sans-serif;
+  font-size: 128px;
+  color: #fff;
+}
+
+.padding-planets {
+  padding: 350px 0 350px 0;
+}
+
+.sol-img {
+  min-height: 700px;
+  min-width: 700px;
+}
+
+.sol {
+  position: absolute;
+  top: 800px;
+  right: 60%;
+}
+
+.mercurio {
+  height: 40px;
+}
+
+.venus {
+  height: 50px;
+}
+
+.terra {
+  height: 50px;
+}
+
+.marte {
+  height: 40px;
+}
+
+.jupiter {
+  height: 100px;
+}
+
+.saturno {
+  height: 70px;
+}
+
+.urano {
+  height: 60px;
+}
+
+.netuno {
+  height: 50px;
+}
+
+.btns {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  left: 0;
+}
+
+.btns a {
+  border: 1.5px solid #fff;
+  color: #fff;
+  padding: 20px 30px;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btns a:hover {
+  color: #000;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px #fff,
+ 0 0 25px #fff,
+ 0 0 50px #fff,
+ 0 0 100px #fff;
+          box-shadow: 0 0 5px #fff,
+ 0 0 25px #fff,
+ 0 0 50px #fff,
+ 0 0 100px #fff;
+}
+
+.icon {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
