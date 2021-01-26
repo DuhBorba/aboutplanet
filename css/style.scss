@@ -26,21 +26,16 @@ body {
   position: fixed;
   background: #fff;
   border-radius: 50%;
-  animation: animate linear infinite;
+  animation: animateStars 50s linear infinite;
   z-index: 0;
 }
 
-@keyframes animate{
+@keyframes animateStars{
   0%{
-    opacity: 0;
-    transform: translateY(0);
-  }
-  10%,90%{
-    opacity: 1;
+    transform: translateY(-100%) scale(1);
   }
   100%{
-    opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(400px) scale(1);
   }
 }
 

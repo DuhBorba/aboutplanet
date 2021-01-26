@@ -45,40 +45,30 @@ body {
   position: fixed;
   background: #fff;
   border-radius: 50%;
-  -webkit-animation: animate linear infinite;
-          animation: animate linear infinite;
+  -webkit-animation: animateStars 50s linear infinite;
+          animation: animateStars 50s linear infinite;
   z-index: 0;
 }
 
-@-webkit-keyframes animate {
+@-webkit-keyframes animateStars {
   0% {
-    opacity: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  10%, 90% {
-    opacity: 1;
+    -webkit-transform: translateY(-100%) scale(1);
+            transform: translateY(-100%) scale(1);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(400px) scale(1);
+            transform: translateY(400px) scale(1);
   }
 }
 
-@keyframes animate {
+@keyframes animateStars {
   0% {
-    opacity: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  10%, 90% {
-    opacity: 1;
+    -webkit-transform: translateY(-100%) scale(1);
+            transform: translateY(-100%) scale(1);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(400px) scale(1);
+            transform: translateY(400px) scale(1);
   }
 }
 
@@ -145,7 +135,7 @@ body {
 .btns a {
   border: 1.5px solid #fff;
   color: #fff;
-  padding: 20px 30px;
+  padding: 25px 30px;
   font-size: 24px;
   text-decoration: none;
   text-transform: uppercase;
@@ -157,14 +147,8 @@ body {
 .btns a:hover {
   color: #000;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 5px #fff,
- 0 0 25px #fff,
- 0 0 50px #fff,
- 0 0 100px #fff;
-          box-shadow: 0 0 5px #fff,
- 0 0 25px #fff,
- 0 0 50px #fff,
- 0 0 100px #fff;
+  -webkit-box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+          box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
 }
 
 .icon {
