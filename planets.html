@@ -50,34 +50,56 @@
 
   <div id="stars" class="scene"></div>
 
-  <header class=" uk-container uk-text-center logo">
-    <img src="img/logo-white.png" alt="Logo About Planet" />
+  <header class=" uk-container">
+    <div class="uk-text-center logo-top">
+      <img src="img/logo-white.png" alt="Logo About Planet" />
+    </div>
   </header>
 
-  <div class="uk-text-center btns">
-    <a href="planets.html" class="btn" onclick="btnClick()">Start</a> <!-- ◄ ► -->
-  </div>
+  <section class="sistema-solar">
+    <div class="sol">
+      <a href="sol.html">
+        <img src="img/sol.png" alt="Sol">
+      </a>
+    </div>
+
+    <div class="mercurio">
+      <a href="mercurio.html">
+        <img src="img/mercurio.png" alt="Mercurio">
+      </a>
+    </div>
+
+    <div class="venus">
+      <img src="img/venus.png" alt="Venus">
+    </div>
+
+    <div class="terra">
+      <img src="img/terra.png" alt="Terra">
+    </div>
+
+    <div class="marte">
+      <img src="img/marte.png" alt="Marte">
+    </div>
+
+    <div class="jupiter">
+      <img src="img/jupiter.png" alt="Jupiter">
+    </div>
+    <div class="saturno">
+      <img src="img/saturno.png" alt="Saturno">
+    </div>
+
+    <div class="urano">
+      <img src="img/urano.png" alt="Urano">
+    </div>
+
+    <div class="netuno">
+      <img src="img/netuno.png" alt="Netuno">
+    </div>
+
+  </section>
+
 
   
-
-  <script>
-    function btnClick(){
-      let logo = document.querySelector('.logo');
-      let btn = document.querySelector('.btn');
-      let stars = document.getElementById('stars');
-      logo.style.opacity = '0';
-      btn.style.opacity = '0';
-      logo.style.transition = '.5s';
-
-      
-      stars.classList.remove('scene');
-      stars.classList.add('scene-stars-speed');
-      
-    }
-
-
-
-  </script>
 
   <script src="js/stars.js"></script>
   <script src="js/mouse-move.js"></script>

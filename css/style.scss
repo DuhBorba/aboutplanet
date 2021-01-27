@@ -1,6 +1,7 @@
 body {
   background: rgb(7, 7, 7);
   height: 100vh;
+  overflow: hidden;
 }
 
 .logo {
@@ -8,6 +9,24 @@ body {
   top: 50%;
   left: 50%;
   animation: float 4s ease-in-out infinite;
+}
+
+.logo-top{
+  padding-top: 10px;
+}
+
+.logo-top img{
+  height: 100px;
+}
+
+.logo-top:before {
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: url('../img/base-logo.png') no-repeat top center;
 }
 
 @keyframes float{
@@ -22,20 +41,48 @@ body {
   }
 }
 
+.scene-stars-speed i{
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 5px #fff,
+                  0 0 25px #fff,
+                  0 0 50px #fff,
+                  0 0 100px #fff;
+  animation: starsSpeed linear infinite;
+}
+
+@keyframes starsSpeed{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(200vh);
+  }
+}
+
 .scene i{
-  position: fixed;
+  position: absolute;
   background: #fff;
+  box-shadow: 0 0 5px #fff,
+                  0 0 25px #fff,
+                  0 0 50px #fff,
+                  0 0 100px #fff;
   border-radius: 50%;
-  animation: animateStars 50s linear infinite;
+  animation: animate linear infinite;
   z-index: 0;
 }
 
-@keyframes animateStars{
+@keyframes animate{
   0%{
-    transform: translateY(-100%) scale(1);
+    opacity: 0;
+    transform: translateY(0);
+  }
+  10%,90%{
+    opacity: 1;
   }
   100%{
-    transform: translateY(400px) scale(1);
+    opacity: 0;
+    transform: translateY(-100px);
   }
 }
 
@@ -45,65 +92,18 @@ body {
   color: #fff;
 }
 
-// Fixed Planets
-
-.padding-planets{
-  padding: 350px 0 350px 0;
-}
-
-.sol-img{
-  min-height: 700px;
-  min-width: 700px;
-}
-
-.sol{
-    position: absolute;
-    top: 800px;
-    right: 60%;
-  }
-
-
-.mercurio{
-  height: 40px;
-}
-
-.venus{
-  height: 50px;
-}
-
-.terra{
-  height: 50px;
-}
-
-.marte{
-  height: 40px;
-}
-
-.jupiter{
-  height: 100px;
-}
-
-.saturno{
-  height: 70px;
-}
-
-.urano{
-  height: 60px;
-}
-
-.netuno{
-  height: 50px;
-}
-
 .btns{
   position: absolute; 
-  bottom: 80px;     
+  bottom: 10%;     
   right: 0;
   left: 0;
+  .btn-header{
+    position: relative;
+  }
   a{
     border: 1.5px solid #fff;
     color: #fff;
-    padding: 25px 30px;
+    padding: 15px 30px;
     font-size: 24px;
     text-decoration: none;
     text-transform: uppercase;
@@ -120,7 +120,244 @@ body {
   }
 }
 
-.icon{
-  margin-top: 10px;
+.btn-header{
+  position: relative;
+  display: inline-flexbox;
+  a{
+    border: 1.5px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: .5s;
+    &:hover{
+      color: #000;
+      background-color: #fff;
+      box-shadow: 0 0 5px #fff,
+                  0 0 25px #fff,
+                  0 0 50px #fff,
+                  0 0 100px #fff;
+    }
+  }
 }
 
+.transition-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  background-color: rgb(7, 7, 7);
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s ease-out;
+}
+
+.transition-1.is-active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+
+// Planets
+
+.sistema-solar{
+  position: relative;
+  margin: auto;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  padding: 50px;
+}
+
+.sol{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  img{
+    position: absolute;
+    width: 100px;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+  }
+}
+
+.mercurio{
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid rgb(172, 172, 172);
+  border-radius: 100%;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  animation: solar 3s linear infinite;
+  img{
+    position: absolute;
+    width: 18px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -9px;
+  }
+}
+
+.venus{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid rgb(172, 172, 172);
+  border-radius: 100%;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  animation: solar 6s linear infinite;
+  img{
+    position: absolute;
+    width: 23px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -12px;
+  }
+}
+
+.terra{
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid rgb(172, 172, 172);
+  border-radius: 100%;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  animation: solar 9s linear infinite;
+  img{
+    position: absolute;
+    width: 25px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -12px;
+  }
+}
+
+.marte{
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid rgb(172, 172, 172);
+  border-radius: 100%;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  animation: solar 12s linear infinite;
+  img{
+    position: absolute;
+    width: 18px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -10px;
+  }
+}
+
+.jupiter{
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid rgb(172, 172, 172);
+  border-radius: 100%;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  animation: solar 15s linear infinite;
+  img{
+    position: absolute;
+    width: 55px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -30px;
+  }
+}
+
+.saturno{
+  position: absolute;
+  width: 470px;
+  height: 470px;
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid rgb(172, 172, 172);
+  border-radius: 100%;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  animation: solar 18s linear infinite;
+  img{
+    position: absolute;
+    width: 60px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -17px;
+  }
+}
+
+.urano{
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid rgb(172, 172, 172);
+  border-radius: 100%;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  animation: solar 21s linear infinite;
+  img{
+    position: absolute;
+    width: 22px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -20px;
+  }
+}
+
+.netuno{
+  position: absolute;
+  width: 620px;
+  height: 620px;
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid rgb(172, 172, 172);
+  border-radius: 100%;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+  animation: solar 24s linear infinite;
+  img{
+    position: absolute;
+    width: 25px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: -13px;
+  }
+}
+
+@keyframes solar{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}

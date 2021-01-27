@@ -1,6 +1,7 @@
 body {
   background: #070707;
   height: 100vh;
+  overflow: hidden;
 }
 
 .logo {
@@ -9,6 +10,24 @@ body {
   left: 50%;
   -webkit-animation: float 4s ease-in-out infinite;
           animation: float 4s ease-in-out infinite;
+}
+
+.logo-top {
+  padding-top: 10px;
+}
+
+.logo-top img {
+  height: 100px;
+}
+
+.logo-top:before {
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: url("../img/base-logo.png") no-repeat top center;
 }
 
 @-webkit-keyframes float {
@@ -41,34 +60,77 @@ body {
   }
 }
 
+.scene-stars-speed i {
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+          box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+  -webkit-animation: starsSpeed linear infinite;
+          animation: starsSpeed linear infinite;
+}
+
+@-webkit-keyframes starsSpeed {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(200vh);
+            transform: translateY(200vh);
+  }
+}
+
+@keyframes starsSpeed {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(200vh);
+            transform: translateY(200vh);
+  }
+}
+
 .scene i {
-  position: fixed;
+  position: absolute;
   background: #fff;
+  -webkit-box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+          box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
   border-radius: 50%;
-  -webkit-animation: animateStars 50s linear infinite;
-          animation: animateStars 50s linear infinite;
+  -webkit-animation: animate linear infinite;
+          animation: animate linear infinite;
   z-index: 0;
 }
 
-@-webkit-keyframes animateStars {
+@-webkit-keyframes animate {
   0% {
-    -webkit-transform: translateY(-100%) scale(1);
-            transform: translateY(-100%) scale(1);
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 90% {
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(400px) scale(1);
-            transform: translateY(400px) scale(1);
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
 }
 
-@keyframes animateStars {
+@keyframes animate {
   0% {
-    -webkit-transform: translateY(-100%) scale(1);
-            transform: translateY(-100%) scale(1);
+    opacity: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  10%, 90% {
+    opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(400px) scale(1);
-            transform: translateY(400px) scale(1);
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
   }
 }
 
@@ -78,64 +140,21 @@ body {
   color: #fff;
 }
 
-.padding-planets {
-  padding: 350px 0 350px 0;
-}
-
-.sol-img {
-  min-height: 700px;
-  min-width: 700px;
-}
-
-.sol {
-  position: absolute;
-  top: 800px;
-  right: 60%;
-}
-
-.mercurio {
-  height: 40px;
-}
-
-.venus {
-  height: 50px;
-}
-
-.terra {
-  height: 50px;
-}
-
-.marte {
-  height: 40px;
-}
-
-.jupiter {
-  height: 100px;
-}
-
-.saturno {
-  height: 70px;
-}
-
-.urano {
-  height: 60px;
-}
-
-.netuno {
-  height: 50px;
-}
-
 .btns {
   position: absolute;
-  bottom: 80px;
+  bottom: 10%;
   right: 0;
   left: 0;
+}
+
+.btns .btn-header {
+  position: relative;
 }
 
 .btns a {
   border: 1.5px solid #fff;
   color: #fff;
-  padding: 25px 30px;
+  padding: 15px 30px;
   font-size: 24px;
   text-decoration: none;
   text-transform: uppercase;
@@ -151,7 +170,298 @@ body {
           box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
 }
 
-.icon {
-  margin-top: 10px;
+.btn-header {
+  position: relative;
+  display: inline-flexbox;
+}
+
+.btn-header a {
+  border: 1.5px solid #fff;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btn-header a:hover {
+  color: #000;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+          box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+}
+
+.transition-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  background-color: #070707;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.transition-1.is-active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.sistema-solar {
+  position: relative;
+  margin: auto;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  padding: 50px;
+}
+
+.sol {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.sol img {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.mercurio {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #acacac;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: solar 3s linear infinite;
+          animation: solar 3s linear infinite;
+}
+
+.mercurio img {
+  position: absolute;
+  width: 18px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: -9px;
+}
+
+.venus {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #acacac;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: solar 6s linear infinite;
+          animation: solar 6s linear infinite;
+}
+
+.venus img {
+  position: absolute;
+  width: 23px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: -12px;
+}
+
+.terra {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #acacac;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: solar 9s linear infinite;
+          animation: solar 9s linear infinite;
+}
+
+.terra img {
+  position: absolute;
+  width: 25px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: -12px;
+}
+
+.marte {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #acacac;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: solar 12s linear infinite;
+          animation: solar 12s linear infinite;
+}
+
+.marte img {
+  position: absolute;
+  width: 18px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: -10px;
+}
+
+.jupiter {
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #acacac;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: solar 15s linear infinite;
+          animation: solar 15s linear infinite;
+}
+
+.jupiter img {
+  position: absolute;
+  width: 55px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: -30px;
+}
+
+.saturno {
+  position: absolute;
+  width: 470px;
+  height: 470px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #acacac;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: solar 18s linear infinite;
+          animation: solar 18s linear infinite;
+}
+
+.saturno img {
+  position: absolute;
+  width: 60px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: -17px;
+}
+
+.urano {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #acacac;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: solar 21s linear infinite;
+          animation: solar 21s linear infinite;
+}
+
+.urano img {
+  position: absolute;
+  width: 22px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: -20px;
+}
+
+.netuno {
+  position: absolute;
+  width: 620px;
+  height: 620px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid #acacac;
+  border-radius: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: solar 24s linear infinite;
+          animation: solar 24s linear infinite;
+}
+
+.netuno img {
+  position: absolute;
+  width: 25px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: -13px;
+}
+
+@-webkit-keyframes solar {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes solar {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
