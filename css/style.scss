@@ -175,11 +175,17 @@ body {
 
 .sol{
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 100%;
   top: 0; bottom: 0;
   left: 0; right: 0;
   margin: auto;
+  box-shadow: 0 0 5px #ffc222,
+                  0 0 25px #ffc222,
+                  0 0 50px #ffc222,
+                  0 0 100px #ffc222;
   img{
     position: absolute;
     width: 100px;
