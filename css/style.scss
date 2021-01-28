@@ -11,15 +11,16 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
-.logo-top{
-  padding-top: 10px;
+.logo-header{
+  margin-top: -40px;
+  margin: -40px 0 0 200px;
 }
 
-.logo-top img{
+.logo-header img{
   height: 100px;
 }
 
-.logo-top:before {
+.logo-header:before {
   content: '';
   position: absolute;
   top: 70px;
@@ -97,9 +98,6 @@ body {
   bottom: 10%;     
   right: 0;
   left: 0;
-  .btn-header{
-    position: relative;
-  }
   a{
     border: 1.5px solid #fff;
     color: #fff;
@@ -121,12 +119,18 @@ body {
 }
 
 .btn-header{
-  position: relative;
-  display: inline-flexbox;
+  // position: absolute;      
+  // right: 65%;
+  // top: 25px;
+  display: inline-block;
+  padding-top: 25px;
+  &:nth-child(2){
+    float: right;
+  }
   a{
     border: 1.5px solid #fff;
     color: #fff;
-    padding: 15px 30px;
+    padding: 10px 10px;
     font-size: 24px;
     text-decoration: none;
     text-transform: uppercase;
@@ -167,10 +171,14 @@ body {
 .sistema-solar{
   position: relative;
   margin: auto;
-  width: 700px;
-  height: 700px;
+  width: 620px;
+  height: 620px;
   overflow: hidden;
   padding: 50px;
+  // transform: matrix3d(3, 0, 0, 0, 
+  //                   0, 1, 0, 0, 
+  //                   1, 1, 1, 0, 
+  //                   1, 1, 1, 1);
 }
 
 .sol{
@@ -213,6 +221,8 @@ body {
     right: 0;
     left: 0;
     top: -9px;
+    
+ transform-origin: 50% 50% 50%;
   }
 }
 
@@ -360,10 +370,83 @@ body {
     right: 0;
     left: 0;
     top: -13px;
+    animation: anti-spin 24s linear infinite;
   }
 }
 
 @keyframes solar{
   from{transform: rotate(0deg);}
   to{transform: rotate(360deg);}
+}
+
+.about-sol{
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background-color: #fff;
+  border-radius: 100%;
+  top: 20%;
+  right: 75%;
+  margin: auto;
+  box-shadow: 0 0 5px #ffc222,
+                  0 0 25px #ffc222,
+                  0 0 50px #ffc222,
+                  0 0 100px #ffc222;
+}
+.about-mercurio{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 40%;
+  left: 10%;
+}
+
+.about-venus{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 40%;
+  left: 10%;
+}
+
+.about-terra{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 34%;
+  left: 7%;
+}
+
+// Cards
+
+.cards{
+  transform: translateY(50%);
+  padding: 0 15% 0 15%!important;
+  font-family: 'Jura', sans-serif;
+  .card{
+    box-shadow: none;
+    border-radius: 2px;
+    background-color: rgb(243, 243, 243);
+    height: 300px;
+    transform-style: preserve-3d; 
+    transform: perspective(1000px);
+    p{
+      transform: translateZ(30px);
+    }
+  }
+  .card-info{
+    background-color: #27272783;
+    color: #fff;
+    p{
+      padding-bottom: 10px; 
+    }
+  }
+  h3{
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    transform: translateZ(60px);
+  }
 }

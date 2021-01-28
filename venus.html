@@ -36,57 +36,54 @@
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
     <div class="btn-header">
-      <a href="sol.html">Próximo ►</a> <!-- ◄ ► -->
+      <a href="terra.html">Próximo ►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
       <img src="img/logo-white.png" alt="Logo About Planet" />
     </div>
   </header>
 
-  <section class="sistema-solar">
-    <div class="sol">
-      <a href="sol.html">
+  <div class="about-sol mouse-move" style="height: 400px; width: 400px;top: 25%;right: 80%;" data-speed="1" ></div>
+    <div class="about-mercurio mouse-move uk-position-relative uk-position-z-index" style="height: 30px; width: 30px;" data-speed="0.5" ><img src="img/mercurio.png" alt="Mercúrio"></div>
+    <div class="about-venus mouse-move uk-position-relative uk-position-z-index" data-speed="2" ><img src="img/venus.png" alt="Vênus"></div>
 
-      </a>
-    </div>
+  <section>
 
-    <div class="mercurio">
-      <a href="mercurio.html">
-        <img src="img/mercurio.png" alt="Mercurio">
-      </a>
+    <div class="uk-child-width-1-3@m uk-padding-large uk-position-relative uk-position-z-index cards" uk-grid>
+        
+        <div>
+            <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+                <h3 class="uk-card-title">Vênus</h3>
+                <p>Vénus ou Vênus é o segundo planeta do Sistema Solar em ordem de distância a partir do Sol, orbitando-o a cada 224,7 dias. 
+                    Recebeu seu nome em homenagem à deusa romana do amor e da beleza Vénus, equivalente a Afrodite.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                <p><b>Período orbital:</b> 88 dias</p>
+                <p><b>Área da superfície:</b> 74.800.000 km²</p>
+                <p><b>Raio:</b> 2.439,7 km</p>
+                <p><b>Duração do dia:</b> 58d 15h 30m</p>
+                <p><b>Gravidade:</b> 3,7 m/s²</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-large uk-card-body card your-element" data-tilt>
+               
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
     </div>
-
-    <div class="venus">
-      <img src="img/venus.png" alt="Venus">
-    </div>
-
-    <div class="terra">
-      <img src="img/terra.png" alt="Terra">
-    </div>
-
-    <div class="marte">
-      <img src="img/marte.png" alt="Marte">
-    </div>
-
-    <div class="jupiter">
-      <img src="img/jupiter.png" alt="Jupiter">
-    </div>
-    <div class="saturno">
-      <img src="img/saturno.png" alt="Saturno">
-    </div>
-
-    <div class="urano">
-      <img src="img/urano.png" alt="Urano">
-    </div>
-
-    <div class="netuno">
-      <img src="img/netuno.png" alt="Netuno">
-    </div>
+    
+    
 
   </section>
 
 
 
+  <script src="js/vanilla-tilt.js"></script>
+
+ 
 
   <script src="js/stars.js"></script>
   <script src="js/mouse-move.js"></script>

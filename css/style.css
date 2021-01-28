@@ -12,15 +12,16 @@ body {
           animation: float 4s ease-in-out infinite;
 }
 
-.logo-top {
-  padding-top: 10px;
+.logo-header {
+  margin-top: -40px;
+  margin: -40px 0 0 200px;
 }
 
-.logo-top img {
+.logo-header img {
   height: 100px;
 }
 
-.logo-top:before {
+.logo-header:before {
   content: '';
   position: absolute;
   top: 70px;
@@ -147,10 +148,6 @@ body {
   left: 0;
 }
 
-.btns .btn-header {
-  position: relative;
-}
-
 .btns a {
   border: 1.5px solid #fff;
   color: #fff;
@@ -171,14 +168,18 @@ body {
 }
 
 .btn-header {
-  position: relative;
-  display: inline-flexbox;
+  display: inline-block;
+  padding-top: 25px;
+}
+
+.btn-header:nth-child(2) {
+  float: right;
 }
 
 .btn-header a {
   border: 1.5px solid #fff;
   color: #fff;
-  padding: 15px 30px;
+  padding: 10px 10px;
   font-size: 24px;
   text-decoration: none;
   text-transform: uppercase;
@@ -216,8 +217,8 @@ body {
 .sistema-solar {
   position: relative;
   margin: auto;
-  width: 700px;
-  height: 700px;
+  width: 620px;
+  height: 620px;
   overflow: hidden;
   padding: 50px;
 }
@@ -270,6 +271,8 @@ body {
   right: 0;
   left: 0;
   top: -9px;
+  -webkit-transform-origin: 50% 50% 50%;
+          transform-origin: 50% 50% 50%;
 }
 
 .venus {
@@ -445,6 +448,8 @@ body {
   right: 0;
   left: 0;
   top: -13px;
+  -webkit-animation: anti-spin 24s linear infinite;
+          animation: anti-spin 24s linear infinite;
 }
 
 @-webkit-keyframes solar {
@@ -467,5 +472,85 @@ body {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.about-sol {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background-color: #fff;
+  border-radius: 100%;
+  top: 20%;
+  right: 75%;
+  margin: auto;
+  -webkit-box-shadow: 0 0 5px #ffc222, 0 0 25px #ffc222, 0 0 50px #ffc222, 0 0 100px #ffc222;
+          box-shadow: 0 0 5px #ffc222, 0 0 25px #ffc222, 0 0 50px #ffc222, 0 0 100px #ffc222;
+}
+
+.about-mercurio {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 40%;
+  left: 10%;
+}
+
+.about-venus {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 40%;
+  left: 10%;
+}
+
+.about-terra {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 34%;
+  left: 7%;
+}
+
+.cards {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  padding: 0 15% 0 15% !important;
+  font-family: 'Jura', sans-serif;
+}
+
+.cards .card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 2px;
+  background-color: #f3f3f3;
+  height: 300px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+}
+
+.cards .card p {
+  -webkit-transform: translateZ(30px);
+          transform: translateZ(30px);
+}
+
+.cards .card-info {
+  background-color: #27272783;
+  color: #fff;
+}
+
+.cards .card-info p {
+  padding-bottom: 10px;
+}
+
+.cards h3 {
+  font-family: 'Jura', sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
 }
 /*# sourceMappingURL=style.css.map */

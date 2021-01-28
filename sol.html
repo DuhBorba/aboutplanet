@@ -36,57 +36,52 @@
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
     <div class="btn-header">
-      <a href="sol.html">Próximo ►</a> <!-- ◄ ► -->
+      <a href="mercurio.html">Próximo ►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
       <img src="img/logo-white.png" alt="Logo About Planet" />
     </div>
   </header>
 
-  <section class="sistema-solar">
-    <div class="sol">
-      <a href="sol.html">
+  <div class="about-sol mouse-move" data-speed="1" ></div>
 
-      </a>
-    </div>
+  <section>
 
-    <div class="mercurio">
-      <a href="mercurio.html">
-        <img src="img/mercurio.png" alt="Mercurio">
-      </a>
+    <div class="uk-child-width-1-3@m uk-padding-large uk-position-relative uk-position-z-index cards" uk-grid>
+        
+        <div>
+            <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+                <h3 class="uk-card-title">Sol</h3>
+                <p>O Sol é a estrela central do Sistema Solar. Todos os outros corpos do Sistema Solar, como planetas, planetas anões, asteroides, cometas e poeira, 
+                    bem como todos os satélites associados a estes corpos, giram ao seu redor.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                <p><b>Temperatura na superfície:</b> 5.778 K</p>
+                <p><b>Raio:</b> 696.340 km</p>
+                <p><b>Idade:</b> 4,603 × 10^9 anos</p>
+                <p><b>Massa:</b> 1,989 × 10^30 kg</p>
+                <p><b>Gravidade:</b> 274 m/s²</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-large uk-card-body card your-element" data-tilt>
+               
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
     </div>
-
-    <div class="venus">
-      <img src="img/venus.png" alt="Venus">
-    </div>
-
-    <div class="terra">
-      <img src="img/terra.png" alt="Terra">
-    </div>
-
-    <div class="marte">
-      <img src="img/marte.png" alt="Marte">
-    </div>
-
-    <div class="jupiter">
-      <img src="img/jupiter.png" alt="Jupiter">
-    </div>
-    <div class="saturno">
-      <img src="img/saturno.png" alt="Saturno">
-    </div>
-
-    <div class="urano">
-      <img src="img/urano.png" alt="Urano">
-    </div>
-
-    <div class="netuno">
-      <img src="img/netuno.png" alt="Netuno">
-    </div>
+    
+    
 
   </section>
 
 
 
+  <script src="js/vanilla-tilt.js"></script>
+
+ 
 
   <script src="js/stars.js"></script>
   <script src="js/mouse-move.js"></script>
