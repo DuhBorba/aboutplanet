@@ -31,7 +31,9 @@
 
   <div id="stars" class="scene mouse-move" data-speed="3"></div>
 
-  <header class=" uk-container">
+  <div class="about-sol mouse-move  uk-position-absolute" data-speed="1"></div>
+
+  <header class=" uk-container uk-position-relative uk-position-z-index">
     <div class="btn-header">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
@@ -42,8 +44,6 @@
       <img src="img/logo-white.png" alt="Logo About Planet" />
     </div>
   </header>
-
-  <div class="about-sol mouse-move  uk-position-absolute" data-speed="1"></div>
 
   <section>
 
@@ -60,18 +60,17 @@
       <div>
         <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt
           data-tilt-glare data-tilt-max-glare="0.5">
-          <p><b>Temperatura na superfície:</b> 5.778 K</p>
-          <p><b>Raio:</b> 696.340 km</p>
           <p><b>Idade:</b> 4,603 × 10^9 anos</p>
-          <p><b>Massa:</b> 1,989 × 10^30 kg</p>
+          <p><b>Temperatura na superfície:</b> 5.778 K</p>
           <p><b>Gravidade:</b> 274 m/s²</p>
+          <p><b>Massa:</b> 1,989 × 10^30 kg</p>
+          <p><b>Raio:</b> 696.340 km</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body card your-element" data-tilt>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+          <h3 class="composicao">Composição</h3>
+          <p>A composição do Sol é de 74% de hidrogênio e 24% de hélio, sendo o percentual restante formado principalmente por oxigênio, carbono e ferro.</p>
         </div>
       </div>
     </div>

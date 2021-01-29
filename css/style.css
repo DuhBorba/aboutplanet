@@ -564,7 +564,7 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 2px;
-  background-color: #f3f3f3;
+  background-color: rgba(243, 243, 243, 0.897);
   height: 300px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -594,5 +594,311 @@ body {
   text-align: center;
   -webkit-transform: translateZ(60px);
           transform: translateZ(60px);
+}
+
+.cards h3.composicao {
+  font-size: 48px;
+}
+
+.asteroides div {
+  position: absolute;
+  display: block;
+}
+
+.asteroides div:nth-child(1) {
+  right: -20%;
+  -webkit-animation: animateAsteroide 10s linear infinite;
+          animation: animateAsteroide 10s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.asteroides div:nth-child(1) img {
+  height: 50px;
+}
+
+.asteroides div:nth-child(2) {
+  right: -20%;
+  -webkit-animation: animateAsteroide 15s linear infinite;
+          animation: animateAsteroide 15s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.asteroides div:nth-child(2) img {
+  height: 100px;
+}
+
+.asteroides div:nth-child(3) {
+  right: -20%;
+  -webkit-animation: animateAsteroide 12s linear infinite;
+          animation: animateAsteroide 12s linear infinite;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.asteroides div:nth-child(3) img {
+  height: 55px;
+}
+
+.asteroides div:nth-child(4) {
+  right: -20%;
+  -webkit-animation: animateAsteroide 15s linear infinite;
+          animation: animateAsteroide 15s linear infinite;
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.asteroides div:nth-child(4) img {
+  height: 100px;
+}
+
+.asteroides div:nth-child(5) {
+  right: -20%;
+  -webkit-animation: animateAsteroide 10s linear infinite;
+          animation: animateAsteroide 10s linear infinite;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.asteroides div:nth-child(5) img {
+  height: 45px;
+}
+
+.asteroides div:nth-child(6) {
+  right: -20%;
+  -webkit-animation: animateAsteroide 12s linear infinite;
+          animation: animateAsteroide 12s linear infinite;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.asteroides div:nth-child(6) img {
+  height: 63px;
+}
+
+.asteroides div:nth-child(7) {
+  right: -20%;
+  -webkit-animation: animateAsteroide 13s linear infinite;
+          animation: animateAsteroide 13s linear infinite;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.asteroides div:nth-child(7) img {
+  height: 55px;
+}
+
+@-webkit-keyframes animateAsteroide {
+  0% {
+    top: 20px;
+    right: -20%;
+    -webkit-transform: translateX(-100px) rotate(0deg);
+            transform: translateX(-100px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translateX(-100px) rotate(110deg);
+            transform: translateX(-100px) rotate(110deg);
+  }
+  40% {
+    -webkit-transform: translateX(-100px) rotate(220deg);
+            transform: translateX(-100px) rotate(220deg);
+  }
+  60% {
+    -webkit-transform: translateX(-100px) rotate(330deg);
+            transform: translateX(-100px) rotate(330deg);
+  }
+  80% {
+    -webkit-transform: translateX(-100px) rotate(440deg);
+            transform: translateX(-100px) rotate(440deg);
+  }
+  100% {
+    top: 80%;
+    right: 110%;
+    -webkit-transform: translateX(-100px) rotate(550deg);
+            transform: translateX(-100px) rotate(550deg);
+  }
+}
+
+@keyframes animateAsteroide {
+  0% {
+    top: 20px;
+    right: -20%;
+    -webkit-transform: translateX(-100px) rotate(0deg);
+            transform: translateX(-100px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translateX(-100px) rotate(110deg);
+            transform: translateX(-100px) rotate(110deg);
+  }
+  40% {
+    -webkit-transform: translateX(-100px) rotate(220deg);
+            transform: translateX(-100px) rotate(220deg);
+  }
+  60% {
+    -webkit-transform: translateX(-100px) rotate(330deg);
+            transform: translateX(-100px) rotate(330deg);
+  }
+  80% {
+    -webkit-transform: translateX(-100px) rotate(440deg);
+            transform: translateX(-100px) rotate(440deg);
+  }
+  100% {
+    top: 80%;
+    right: 110%;
+    -webkit-transform: translateX(-100px) rotate(550deg);
+            transform: translateX(-100px) rotate(550deg);
+  }
+}
+
+.asteroides-2 div {
+  position: absolute;
+  display: block;
+}
+
+.asteroides-2 div:nth-child(1) {
+  right: -20%;
+  -webkit-animation: animateAsteroide2 11s linear infinite;
+          animation: animateAsteroide2 11s linear infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.asteroides-2 div:nth-child(1) img {
+  height: 70px;
+}
+
+.asteroides-2 div:nth-child(2) {
+  right: -20%;
+  -webkit-animation: animateAsteroide2 15s linear infinite;
+          animation: animateAsteroide2 15s linear infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.asteroides-2 div:nth-child(2) img {
+  height: 130px;
+}
+
+.asteroides-2 div:nth-child(3) {
+  right: -20%;
+  -webkit-animation: animateAsteroide2 12s linear infinite;
+          animation: animateAsteroide2 12s linear infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.asteroides-2 div:nth-child(3) img {
+  height: 75px;
+}
+
+.asteroides-2 div:nth-child(4) {
+  right: -20%;
+  -webkit-animation: animateAsteroide2 16s linear infinite;
+          animation: animateAsteroide2 16s linear infinite;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.asteroides-2 div:nth-child(4) img {
+  height: 100px;
+}
+
+.asteroides-2 div:nth-child(5) {
+  right: -20%;
+  -webkit-animation: animateAsteroide2 10s linear infinite;
+          animation: animateAsteroide2 10s linear infinite;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.asteroides-2 div:nth-child(5) img {
+  height: 45px;
+}
+
+.asteroides-2 div:nth-child(6) {
+  right: -20%;
+  -webkit-animation: animateAsteroide2 9s linear infinite;
+          animation: animateAsteroide2 9s linear infinite;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.asteroides-2 div:nth-child(6) img {
+  height: 63px;
+}
+
+.asteroides-2 div:nth-child(7) {
+  right: -20%;
+  -webkit-animation: animateAsteroide2 18s linear infinite;
+          animation: animateAsteroide2 18s linear infinite;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.asteroides-2 div:nth-child(7) img {
+  height: 100px;
+}
+
+@-webkit-keyframes animateAsteroide2 {
+  0% {
+    top: 30%;
+    right: -20%;
+    -webkit-transform: translateX(-100px) rotate(0deg);
+            transform: translateX(-100px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translateX(-100px) rotate(60deg);
+            transform: translateX(-100px) rotate(60deg);
+  }
+  40% {
+    -webkit-transform: translateX(-100px) rotate(120deg);
+            transform: translateX(-100px) rotate(120deg);
+  }
+  60% {
+    -webkit-transform: translateX(-100px) rotate(180deg);
+            transform: translateX(-100px) rotate(180deg);
+  }
+  80% {
+    -webkit-transform: translateX(-100px) rotate(240deg);
+            transform: translateX(-100px) rotate(240deg);
+  }
+  100% {
+    top: 70%;
+    right: 110%;
+    -webkit-transform: translateX(-100px) rotate(300deg);
+            transform: translateX(-100px) rotate(300deg);
+  }
+}
+
+@keyframes animateAsteroide2 {
+  0% {
+    top: 30%;
+    right: -20%;
+    -webkit-transform: translateX(-100px) rotate(0deg);
+            transform: translateX(-100px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translateX(-100px) rotate(60deg);
+            transform: translateX(-100px) rotate(60deg);
+  }
+  40% {
+    -webkit-transform: translateX(-100px) rotate(120deg);
+            transform: translateX(-100px) rotate(120deg);
+  }
+  60% {
+    -webkit-transform: translateX(-100px) rotate(180deg);
+            transform: translateX(-100px) rotate(180deg);
+  }
+  80% {
+    -webkit-transform: translateX(-100px) rotate(240deg);
+            transform: translateX(-100px) rotate(240deg);
+  }
+  100% {
+    top: 70%;
+    right: 110%;
+    -webkit-transform: translateX(-100px) rotate(300deg);
+            transform: translateX(-100px) rotate(300deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

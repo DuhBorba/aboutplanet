@@ -31,7 +31,17 @@
 
   <div id="stars" class="scene mouse-move" data-speed="3"></div>
 
-  <header class=" uk-container">
+  <div class="about-sol mouse-move uk-position-absolute" style="height: 300px; width: 300px;top: 25%;right: 85%;"
+    data-speed="0.5"></div>
+  <div class="about-mercurio mouse-move uk-position-absolute uk-position-z-index"
+    style="height: 20px; width: 20px;top: 48%;left: 6.5%;" data-speed="0"><img src="img/mercurio.png" alt="Mercúrio">
+  </div>
+  <div class="about-venus mouse-move uk-position-absolute uk-position-z-index"
+    style="height: 40px; width: 40px;top: 50%;left: 7%;" data-speed="0.5"><img src="img/venus.png" alt="Vênus"></div>
+  <div class="about-terra mouse-move uk-position-absolute uk-position-z-index" data-speed="-1"><img src="img/terra.png"
+      alt="Terra"></div>
+
+  <header class=" uk-container uk-position-relative uk-position-z-index">
     <div class="btn-header">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
@@ -42,16 +52,6 @@
       <img src="img/logo-white.png" alt="Logo About Planet" />
     </div>
   </header>
-
-  <div class="about-sol mouse-move uk-position-absolute" style="height: 300px; width: 300px;top: 25%;right: 85%;"
-    data-speed="0.5"></div>
-  <div class="about-mercurio mouse-move uk-position-absolute uk-position-z-index"
-    style="height: 20px; width: 20px;top: 48%;left: 6.5%;" data-speed="0"><img src="img/mercurio.png" alt="Mercúrio">
-  </div>
-  <div class="about-venus mouse-move uk-position-absolute uk-position-z-index"
-    style="height: 40px; width: 40px;top: 50%;left: 7%;" data-speed="0.5"><img src="img/venus.png" alt="Vênus"></div>
-  <div class="about-terra mouse-move uk-position-absolute uk-position-z-index" data-speed="-1"><img src="img/terra.png"
-      alt="Terra"></div>
 
   <section>
 
@@ -68,18 +68,19 @@
       <div>
         <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt
           data-tilt-glare data-tilt-max-glare="0.5">
-          <p><b>Período orbital:</b> 88 dias</p>
-          <p><b>Área da superfície:</b> 74.800.000 km²</p>
-          <p><b>Raio:</b> 2.439,7 km</p>
-          <p><b>Duração do dia:</b> 58d 15h 30m</p>
-          <p><b>Gravidade:</b> 3,7 m/s²</p>
+          <p><b>Idade: </b> 4,543 × 10^9 anos</p>
+          <p><b>Duração do dia:</b> 23h 59m 59s</p>
+          <p><b>Período orbital:</b> 365 dias</p>
+          <p><b>Gravidade:</b> 9,807 m/s²</p>
+          <p><b>Área da superfície:</b> 510.100.000 km²</p>
+          <p><b>Raio:</b> 6.371 km</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body card your-element" data-tilt>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+          <h3 class="composicao">Composição</h3>
+          <p>A sua composição se dá por diversos gases, sendo 78% da atmosfera terrestre constituído por nitrogênio, 21% por oxigênio, isso sem falar na composição de argônio. 
+            A Terra é conhecida também como Planeta Azul pois, em média, 70% da sua superfície é composta por água.</p>
         </div>
       </div>
     </div>

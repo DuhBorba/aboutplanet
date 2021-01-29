@@ -31,7 +31,11 @@
 
   <div id="stars" class="scene mouse-move" data-speed="3"></div>
 
-  <header class=" uk-container">
+  <div class="about-sol mouse-move uk-position-absolute" style="height: 500px; width: 500px;" data-speed="1"></div>
+  <div class="about-mercurio mouse-move uk-position-absolute uk-position-z-index" data-speed="-1"><img
+      src="img/mercurio.png" alt="Mercúrio"></div>
+
+  <header class=" uk-container uk-position-relative uk-position-z-index">
     <div class="btn-header">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
@@ -42,10 +46,6 @@
       <img src="img/logo-white.png" alt="Logo About Planet" />
     </div>
   </header>
-
-  <div class="about-sol mouse-move uk-position-absolute" style="height: 500px; width: 500px;" data-speed="1"></div>
-  <div class="about-mercurio mouse-move uk-position-absolute uk-position-z-index" data-speed="-1"><img
-      src="img/mercurio.png" alt="Mercúrio"></div>
 
   <section>
 
@@ -62,18 +62,19 @@
       <div>
         <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt
           data-tilt-glare data-tilt-max-glare="0.5">
+          <p><b>Idade:</b> 4,503 × 10^9 anos</p>
+          <p><b>Duração do dia:</b> 58d 15h 30m</p>
           <p><b>Período orbital:</b> 88 dias</p>
+          <p><b>Gravidade:</b> 3,7 m/s²</p>
           <p><b>Área da superfície:</b> 74.800.000 km²</p>
           <p><b>Raio:</b> 2.439,7 km</p>
-          <p><b>Duração do dia:</b> 58d 15h 30m</p>
-          <p><b>Gravidade:</b> 3,7 m/s²</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body card your-element" data-tilt>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+          <h3 class="composicao">Composição</h3>
+          <p>Por estar tão próximo do Sol, a atmosfera de Mercúrio é bem instável e fraca, se comparada com a da Terra. 
+            Em geral, possui gases como hélio, sódio e oxigênio, com predomínio dos dois primeiros.</p>
         </div>
       </div>
     </div>
