@@ -491,7 +491,7 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 40%;
+  top: 50%;
   left: 10%;
 }
 
@@ -499,7 +499,7 @@ body {
   position: absolute;
   width: 80px;
   height: 80px;
-  top: 40%;
+  top: 53%;
   left: 10%;
 }
 
@@ -507,15 +507,57 @@ body {
   position: absolute;
   width: 80px;
   height: 80px;
-  top: 34%;
+  top: 53%;
+  left: 7%;
+}
+
+.about-marte {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 51%;
+  left: 7%;
+}
+
+.about-jupiter {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  top: 49%;
+  left: 4%;
+}
+
+.about-saturno {
+  position: absolute;
+  width: 280px;
+  top: 49%;
+  left: 1%;
+}
+
+.about-urano {
+  position: absolute;
+  width: 90px;
+  top: 43%;
+  left: 7%;
+}
+
+.about-netuno {
+  position: absolute;
+  width: 80px;
+  top: 43%;
   left: 7%;
 }
 
 .cards {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  top: 40%;
   padding: 0 15% 0 15% !important;
   font-family: 'Jura', sans-serif;
+}
+
+@media (max-width: 1750px) {
+  .cards {
+    padding: 0 3% 0 3% !important;
+  }
 }
 
 .cards .card {
