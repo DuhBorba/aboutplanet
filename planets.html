@@ -32,11 +32,17 @@
   <div id="stars" class="scene mouse-move" data-speed="3"></div>
 
   <header class=" uk-container uk-position-relative uk-position-z-indexs">
-    <div class="btn-header">
+    <div class="btn-header uk-visible@s">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
-    <div class="btn-header">
+    <div class="btn-header uk-hidden@s">
+      <a onClick="history.go(-1)">◄</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-visible@s">
       <a href="sol.html">Próximo ►</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-hidden@s">
+      <a href="sol.html">►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
       <img src="img/logo-white.png" alt="Logo About Planet" />

@@ -42,11 +42,17 @@
       alt="Terra"></div>
 
   <header class=" uk-container uk-position-relative uk-position-z-index">
-    <div class="btn-header">
+    <div class="btn-header uk-visible@s">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
-    <div class="btn-header">
+    <div class="btn-header uk-hidden@s">
+      <a onClick="history.go(-1)">◄</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-visible@s">
       <a href="marte.html">Próximo ►</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-hidden@s">
+      <a href="marte.html">►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
       <img src="img/logo-white.png" alt="Logo About Planet" />
@@ -66,8 +72,8 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt
-          data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.5">
           <p><b>Idade: </b> 4,543 × 10^9 anos</p>
           <p><b>Duração do dia:</b> 23h 59m 59s</p>
           <p><b>Período orbital:</b> 365 dias</p>
@@ -77,9 +83,10 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+        <div class="uk-card uk-card-default uk-card-body uk-visible@m card your-element" data-tilt>
           <h3 class="composicao">Composição</h3>
-          <p>A sua composição se dá por diversos gases, sendo 78% da atmosfera terrestre constituído por nitrogênio, 21% por oxigênio, isso sem falar na composição de argônio. 
+          <p>A sua composição se dá por diversos gases, sendo 78% da atmosfera terrestre constituído por nitrogênio, 21%
+            por oxigênio, isso sem falar na composição de argônio.
             A Terra é conhecida também como Planeta Azul pois, em média, 70% da sua superfície é composta por água.</p>
         </div>
       </div>

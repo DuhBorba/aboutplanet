@@ -36,11 +36,17 @@
       src="img/mercurio.png" alt="Mercúrio"></div>
 
   <header class=" uk-container uk-position-relative uk-position-z-index">
-    <div class="btn-header">
+    <div class="btn-header uk-visible@s">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
-    <div class="btn-header">
+    <div class="btn-header uk-hidden@s">
+      <a onClick="history.go(-1)">◄</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-visible@s">
       <a href="venus.html">Próximo ►</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-hidden@s">
+      <a href="venus.html">►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
       <img src="img/logo-white.png" alt="Logo About Planet" />
@@ -60,8 +66,8 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt
-          data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.5">
           <p><b>Idade:</b> 4,503 × 10^9 anos</p>
           <p><b>Duração do dia:</b> 58d 15h 30m</p>
           <p><b>Período orbital:</b> 88 dias</p>
@@ -71,9 +77,9 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+        <div class="uk-card uk-card-default uk-card-body uk-visible@m card your-element" data-tilt>
           <h3 class="composicao">Composição</h3>
-          <p>Por estar tão próximo do Sol, a atmosfera de Mercúrio é bem instável e fraca, se comparada com a da Terra. 
+          <p>Por estar tão próximo do Sol, a atmosfera de Mercúrio é bem instável e fraca, se comparada com a da Terra.
             Em geral, possui gases como hélio, sódio e oxigênio, com predomínio dos dois primeiros.</p>
         </div>
       </div>

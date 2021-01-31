@@ -24,51 +24,60 @@
   <link href="css/style.css" rel="stylesheet" />
 
   <style>
-
-    @keyframes animateAsteroide{
-      0%{
+    @keyframes animateAsteroide {
+      0% {
         top: -50px;
         right: 20%;
         transform: translateX(-100px) rotate(0deg);
       }
-      20%{
+
+      20% {
         transform: translateX(-100px) rotate(110deg);
       }
-      40%{
+
+      40% {
         transform: translateX(-100px) rotate(220deg);
       }
-      60%{
+
+      60% {
         transform: translateX(-100px) rotate(330deg);
       }
-      80%{
+
+      80% {
         transform: translateX(-100px) rotate(440deg);
       }
-      100%{
+
+      100% {
         top: 75%;
         right: 110%;
         transform: translateX(-100px) rotate(550deg);
       }
     }
 
-    @keyframes animateAsteroide2{
-      0%{
+    @keyframes animateAsteroide2 {
+      0% {
         top: -50px;
         right: 5%;
         transform: translateX(-100px) rotate(0deg);
       }
-      20%{
+
+      20% {
         transform: translateX(-100px) rotate(110deg);
       }
-      40%{
+
+      40% {
         transform: translateX(-100px) rotate(220deg);
       }
-      60%{
+
+      60% {
         transform: translateX(-100px) rotate(330deg);
       }
-      80%{
+
+      80% {
         transform: translateX(-100px) rotate(440deg);
       }
-      100%{
+
+      100% {
         top: 70%;
         right: 110%;
         transform: translateX(-100px) rotate(550deg);
@@ -87,45 +96,51 @@
 
   <div class="about-sol mouse-move uk-position-absolute" style="height: 100px; width: 100px;top: 30%;right: 92%;"
     data-speed="0.2"></div>
-  <div class="about-mercurio mouse-move uk-position-absolute"
-    style="height: 5px; width: 5px;top: 38%;left: 5%;" data-speed="0"><img src="img/mercurio.png" alt="Mercúrio">
+  <div class="about-mercurio mouse-move uk-position-absolute" style="height: 5px; width: 5px;top: 38%;left: 5%;"
+    data-speed="0"><img src="img/mercurio.png" alt="Mercúrio">
   </div>
-  <div class="about-venus mouse-move uk-position-absolute"
-    style="height: 20px; width: 20px;top: 40%;left: 5%;" data-speed="0.3"><img src="img/venus.png" alt="Vênus"></div>
-  <div class="about-terra mouse-move uk-position-absolute"
-    style="height: 30px; width: 30px;top: 42%;left: 5%;" data-speed="0"><img src="img/terra.png" alt="Terra"></div>
-  <div class="about-marte mouse-move uk-position-absolute"
-    style="height: 40px; width: 40px;top: 46%;left: 6%;" data-speed="0.5"><img src="img/marte.png" alt="Marte"></div>
-  
-    <div class="asteroides uk-position-z-index">
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 30px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 35px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 45px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 63px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 35px;"></div>
-    </div>
-  
-    <div class="asteroides-2 uk-position-z-index">
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 50px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 55px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 25px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 43px;"></div>
-      <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
-    </div>
+  <div class="about-venus mouse-move uk-position-absolute" style="height: 20px; width: 20px;top: 40%;left: 5%;"
+    data-speed="0.3"><img src="img/venus.png" alt="Vênus"></div>
+  <div class="about-terra mouse-move uk-position-absolute" style="height: 30px; width: 30px;top: 42%;left: 5%;"
+    data-speed="0"><img src="img/terra.png" alt="Terra"></div>
+  <div class="about-marte mouse-move uk-position-absolute" style="height: 40px; width: 40px;top: 46%;left: 6%;"
+    data-speed="0.5"><img src="img/marte.png" alt="Marte"></div>
+
+  <div class="asteroides uk-position-z-index">
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 30px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 35px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 45px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 63px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 35px;"></div>
+  </div>
+
+  <div class="asteroides-2 uk-position-z-index">
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 50px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 55px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 25px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 43px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+  </div>
 
   <div class="about-jupiter mouse-move uk-position-absolute uk-position-z-index" data-speed="-0.5"><img
       src="img/jupiter.png" alt="Júpiter"></div>
 
   <header class=" uk-container uk-position-relative uk-position-z-index">
-    <div class="btn-header">
+    <div class="btn-header uk-visible@s">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
-    <div class="btn-header">
+    <div class="btn-header uk-hidden@s">
+      <a onClick="history.go(-1)">◄</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-visible@s">
       <a href="saturno.html">Próximo ►</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-hidden@s">
+      <a href="saturno.html">►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
       <img src="img/logo-white.png" alt="Logo About Planet" />
@@ -139,13 +154,15 @@
       <div>
         <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
           <h3 class="uk-card-title">Júpiter</h3>
-          <p>Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do Sol. Possui menos de um milésimo da massa 
-            solar, contudo tem 2,5 vezes a massa de todos os outros planetas em conjunto. É um planeta gasoso, junto com Saturno, Urano e Netuno.</p>
+          <p>Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do
+            Sol. Possui menos de um milésimo da massa
+            solar, contudo tem 2,5 vezes a massa de todos os outros planetas em conjunto. É um planeta gasoso, junto com
+            Saturno, Urano e Netuno.</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt
-          data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.5">
           <p><b>Idade:</b> 4,503 × 10^9 anos</p>
           <p><b>Duração do dia:</b> 0d 9h 56m</p>
           <p><b>Período orbital:</b> 12 anos</p>
@@ -155,9 +172,9 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+        <div class="uk-card uk-card-default uk-card-body uk-visible@m card your-element" data-tilt>
           <h3 class="composicao">Composição</h3>
-          <p>Júpiter é composto principalmente de hidrogênio, sendo um quarto de sua massa composta de hélio, 
+          <p>Júpiter é composto principalmente de hidrogênio, sendo um quarto de sua massa composta de hélio,
             embora o hélio corresponda a apenas um décimo do número total de moléculas.</p>
         </div>
       </div>

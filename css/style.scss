@@ -9,11 +9,19 @@ body {
   top: 50%;
   left: 50%;
   animation: float 4s ease-in-out infinite;
+  @media(max-width: 650px){
+    width: 300px;
+  }
 }
 
 .logo-header{
-  margin-top: -40px;
   margin: -40px 0 0 200px;
+  @media(max-width: 639px){
+    margin: -40px 0 0 55px;
+  }
+}
+.logo-header-final{
+  margin: -40px 0 0 0;
 }
 
 .logo-header img{
@@ -124,7 +132,10 @@ body {
   // top: 25px;
   display: inline-block;
   padding-top: 25px;
-  &:nth-child(2){
+  &:nth-child(3){
+    float: right;
+  }
+  &:nth-child(4){
     float: right;
   }
   a{
@@ -143,6 +154,9 @@ body {
                   0 0 25px #fff,
                   0 0 50px #fff,
                   0 0 100px #fff;
+    }
+    @media(max-width: 640px){
+      padding: 5px 10px;
     }
   }
 }
@@ -444,7 +458,7 @@ body {
   position: absolute;
   width: 90px;
   top: 43%;
-  left: 7%;
+  left: 8%;
 }
 
 .about-netuno{
@@ -488,9 +502,18 @@ body {
     text-transform: uppercase;
     text-align: center;
     transform: translateZ(60px);
+    @media(max-width: 1750px){
+      font-size: 3em;;
+    }
+    @media(max-width: 1150px){
+      font-size: 2em;;
+    }
   }
   h3.composicao{
-    font-size: 48px;
+    font-size: 3em;
+    @media(max-width: 1230px){
+      font-size: 2em;;
+    }
   }
 }
 

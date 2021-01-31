@@ -33,15 +33,14 @@
 
   <div class="about-sol mouse-move uk-position-absolute" style="height: 200px; width: 200px;top: 25%;right: 90%;"
     data-speed="0.5"></div>
-  <div class="about-mercurio mouse-move uk-position-absolute"
-    style="height: 10px; width: 10px;top: 40%;left: 6%;" data-speed="0"><img src="img/mercurio.png" alt="Mercúrio">
+  <div class="about-mercurio mouse-move uk-position-absolute" style="height: 10px; width: 10px;top: 40%;left: 6%;"
+    data-speed="0"><img src="img/mercurio.png" alt="Mercúrio">
   </div>
-  <div class="about-venus mouse-move uk-position-absolute"
-    style="height: 30px; width: 30px;top: 42%;left: 6%;" data-speed="0.5"><img src="img/venus.png" alt="Vênus"></div>
-  <div class="about-terra mouse-move uk-position-absolute"
-    style="height: 40px; width: 40px;top: 45%;left: 6%;" data-speed="0"><img src="img/terra.png" alt="Terra"></div>
-  <div class="about-marte mouse-move uk-position-absolute" data-speed="1"><img src="img/marte.png"
-      alt="Marte"></div>
+  <div class="about-venus mouse-move uk-position-absolute" style="height: 30px; width: 30px;top: 42%;left: 6%;"
+    data-speed="0.5"><img src="img/venus.png" alt="Vênus"></div>
+  <div class="about-terra mouse-move uk-position-absolute" style="height: 40px; width: 40px;top: 45%;left: 6%;"
+    data-speed="0"><img src="img/terra.png" alt="Terra"></div>
+  <div class="about-marte mouse-move uk-position-absolute" data-speed="1"><img src="img/marte.png" alt="Marte"></div>
 
   <div class="asteroides uk-position-z-index">
     <div><img src="img/asteroide-normal.png" alt="Asteróide"></div>
@@ -64,11 +63,17 @@
   </div>
 
   <header class=" uk-container uk-position-relative uk-position-z-index">
-    <div class="btn-header">
+    <div class="btn-header uk-visible@s">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
-    <div class="btn-header">
+    <div class="btn-header uk-hidden@s">
+      <a onClick="history.go(-1)">◄</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-visible@s">
       <a href="jupiter.html">Próximo ►</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-hidden@s">
+      <a href="jupiter.html">►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
       <img src="img/logo-white.png" alt="Logo About Planet" />
@@ -82,13 +87,15 @@
       <div>
         <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
           <h3 class="uk-card-title">Marte</h3>
-          <p>Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar. Batizado em homenagem ao deus romano da guerra, 
-            muitas vezes é descrito como o "Planeta Vermelho", porque o óxido de ferro predominante em sua superfície lhe dá uma aparência avermelhada.</p>
+          <p>Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar. Batizado em homenagem ao deus
+            romano da guerra,
+            muitas vezes é descrito como o "Planeta Vermelho", porque o óxido de ferro predominante em sua superfície
+            lhe dá uma aparência avermelhada.</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt
-          data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.5">
           <p><b>Idade:</b> 4,603 × 10^9 anos</p>
           <p><b>Duração do dia:</b> 1d 0h 37m</p>
           <p><b>Período orbital:</b> 687 dias</p>
@@ -98,10 +105,12 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+        <div class="uk-card uk-card-default uk-card-body uk-visible@m card your-element" data-tilt>
           <h3 class="composicao">Composição</h3>
-          <p>A composição da superfície é fundamentalmente de basalto vulcânico com um alto conteúdo em óxidos de ferro que proporcionam o vermelho 
-            característico da superfície. Pela sua natureza, assemelha-se com a limonite, óxido de ferro muito hidratado.</p>
+          <p>A composição da superfície é fundamentalmente de basalto vulcânico com um alto conteúdo em óxidos de ferro
+            que proporcionam o vermelho
+            característico da superfície. Pela sua natureza, assemelha-se com a limonite, óxido de ferro muito
+            hidratado.</p>
         </div>
       </div>
     </div>

@@ -12,9 +12,24 @@ body {
           animation: float 4s ease-in-out infinite;
 }
 
+@media (max-width: 650px) {
+  .logo {
+    width: 300px;
+  }
+}
+
 .logo-header {
-  margin-top: -40px;
   margin: -40px 0 0 200px;
+}
+
+@media (max-width: 639px) {
+  .logo-header {
+    margin: -40px 0 0 55px;
+  }
+}
+
+.logo-header-final {
+  margin: -40px 0 0 0;
 }
 
 .logo-header img {
@@ -172,7 +187,11 @@ body {
   padding-top: 25px;
 }
 
-.btn-header:nth-child(2) {
+.btn-header:nth-child(3) {
+  float: right;
+}
+
+.btn-header:nth-child(4) {
   float: right;
 }
 
@@ -193,6 +212,12 @@ body {
   background-color: #fff;
   -webkit-box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
           box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 100px #fff;
+}
+
+@media (max-width: 640px) {
+  .btn-header a {
+    padding: 5px 10px;
+  }
 }
 
 .transition-1 {
@@ -538,7 +563,7 @@ body {
   position: absolute;
   width: 90px;
   top: 43%;
-  left: 7%;
+  left: 8%;
 }
 
 .about-netuno {
@@ -596,8 +621,26 @@ body {
           transform: translateZ(60px);
 }
 
+@media (max-width: 1750px) {
+  .cards h3 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1150px) {
+  .cards h3 {
+    font-size: 2em;
+  }
+}
+
 .cards h3.composicao {
-  font-size: 48px;
+  font-size: 3em;
+}
+
+@media (max-width: 1230px) {
+  .cards h3.composicao {
+    font-size: 2em;
+  }
 }
 
 .asteroides div {

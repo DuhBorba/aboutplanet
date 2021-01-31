@@ -34,11 +34,17 @@
   <div class="about-sol mouse-move  uk-position-absolute" data-speed="1"></div>
 
   <header class=" uk-container uk-position-relative uk-position-z-index">
-    <div class="btn-header">
+    <div class="btn-header uk-visible@s">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
-    <div class="btn-header">
+    <div class="btn-header uk-hidden@s">
+      <a onClick="history.go(-1)">◄</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-visible@s">
       <a href="mercurio.html">Próximo ►</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-hidden@s">
+      <a href="mercurio.html">►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
       <img src="img/logo-white.png" alt="Logo About Planet" />
@@ -58,8 +64,8 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body card card-info your-element" data-tilt
-          data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.5">
           <p><b>Idade:</b> 4,603 × 10^9 anos</p>
           <p><b>Temperatura na superfície:</b> 5.778 K</p>
           <p><b>Gravidade:</b> 274 m/s²</p>
@@ -68,9 +74,10 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+        <div class="uk-card uk-card-default uk-card-body uk-visible@m card your-element" data-tilt>
           <h3 class="composicao">Composição</h3>
-          <p>A composição do Sol é de 74% de hidrogênio e 24% de hélio, sendo o percentual restante formado principalmente por oxigênio, carbono e ferro.</p>
+          <p>A composição do Sol é de 74% de hidrogênio e 24% de hélio, sendo o percentual restante formado
+            principalmente por oxigênio, carbono e ferro.</p>
         </div>
       </div>
     </div>
