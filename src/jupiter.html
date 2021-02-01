@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>About Planet</title>
+  <meta charset="UTF-8" />
+
+  <link rel="android-chrome-192x192" type="image/png" sizes="192x192" href="img/android-icon-192x192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <style>
+    @keyframes animateAsteroide {
+      0% {
+        top: -50px;
+        right: 20%;
+        transform: translateX(-100px) rotate(0deg);
+      }
+
+      20% {
+        transform: translateX(-100px) rotate(110deg);
+      }
+
+      40% {
+        transform: translateX(-100px) rotate(220deg);
+      }
+
+      60% {
+        transform: translateX(-100px) rotate(330deg);
+      }
+
+      80% {
+        transform: translateX(-100px) rotate(440deg);
+      }
+
+      100% {
+        top: 75%;
+        right: 110%;
+        transform: translateX(-100px) rotate(550deg);
+      }
+    }
+    @media (max-width: 550px){
+      @keyframes animateAsteroide {
+        0% {
+          top: -50px;
+          right: -30%;
+          transform: translateX(-100px) rotate(0deg);
+        }
+
+        20% {
+          transform: translateX(-100px) rotate(110deg);
+        }
+
+        40% {
+          transform: translateX(-100px) rotate(220deg);
+        }
+
+        60% {
+          transform: translateX(-100px) rotate(330deg);
+        }
+
+        80% {
+          transform: translateX(-100px) rotate(440deg);
+        }
+
+        100% {
+          top: 80%;
+          right: 110%;
+          transform: translateX(-100px) rotate(550deg);
+        }
+      }
+    }
+
+    @keyframes animateAsteroide2 {
+      0% {
+        top: -50px;
+        right: 5%;
+        transform: translateX(-100px) rotate(0deg);
+      }
+
+      20% {
+        transform: translateX(-100px) rotate(110deg);
+      }
+
+      40% {
+        transform: translateX(-100px) rotate(220deg);
+      }
+
+      60% {
+        transform: translateX(-100px) rotate(330deg);
+      }
+
+      80% {
+        transform: translateX(-100px) rotate(440deg);
+      }
+
+      100% {
+        top: 70%;
+        right: 110%;
+        transform: translateX(-100px) rotate(550deg);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="transition transition-1 is-active"></div>
+
+
+  <div id="stars" class="scene mouse-move" data-speed="3"></div>
+
+  <div class="about-sol mouse-move uk-position-absolute" style="height: 100px; width: 100px;top: 30%;right: 92%;"
+    data-speed="0.2"></div>
+  <div class="about-mercurio mouse-move uk-position-absolute" style="height: 5px; width: 5px;top: 38%;left: 5%;"
+    data-speed="0"><img src="img/mercurio.png" alt="Mercúrio">
+  </div>
+  <div class="about-venus mouse-move uk-position-absolute" style="height: 20px; width: 20px;top: 40%;left: 5%;"
+    data-speed="0.3"><img src="img/venus.png" alt="Vênus"></div>
+  <div class="about-terra mouse-move uk-position-absolute" style="height: 30px; width: 30px;top: 42%;left: 5%;"
+    data-speed="0"><img src="img/terra.png" alt="Terra"></div>
+  <div class="about-marte mouse-move uk-position-absolute" style="height: 40px; width: 40px;top: 46%;left: 6%;"
+    data-speed="0.5"><img src="img/marte.png" alt="Marte"></div>
+
+  <div class="asteroides uk-position-z-index">
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 30px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 35px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 45px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 63px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 35px;"></div>
+  </div>
+
+  <div class="asteroides-2 uk-position-z-index">
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 50px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 55px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 25px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 43px;"></div>
+    <div><img src="img/asteroide-normal.png" alt="Asteróide" style="height: 60px;"></div>
+  </div>
+
+  <div class="about-jupiter mouse-move uk-position-absolute uk-position-z-index" data-speed="-0.5"><img
+      src="img/jupiter.png" alt="Júpiter"></div>
+
+  <header class=" uk-container uk-position-relative uk-position-z-index">
+    <div class="btn-header uk-visible@s">
+      <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-hidden@s">
+      <a onClick="history.go(-1)">◄</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-visible@s">
+      <a href="saturno.html">Próximo ►</a> <!-- ◄ ► -->
+    </div>
+    <div class="btn-header uk-hidden@s">
+      <a href="saturno.html">►</a> <!-- ◄ ► -->
+    </div>
+    <div class="uk-text-center logo-header">
+      <img src="img/logo-white.png" alt="Logo About Planet" />
+    </div>
+  </header>
+
+  <section>
+
+    <div class="uk-child-width-1-3@m uk-padding-large uk-position-absolute uk-position-z-index cards" uk-grid>
+
+      <div>
+        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+          <h3 class="uk-card-title">Júpiter</h3>
+          <p>Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em massa, e é o quinto mais próximo do
+            Sol. Possui menos de um milésimo da massa
+            solar, contudo tem 2,5 vezes a massa de todos os outros planetas em conjunto. É um planeta gasoso, junto com
+            Saturno, Urano e Netuno.</p>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element"
+          data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <p><b>Idade:</b> 4,503 × 10^9 anos</p>
+          <p><b>Duração do dia:</b> 0d 9h 56m</p>
+          <p><b>Período orbital:</b> 12 anos</p>
+          <p><b>Gravidade:</b> 24,79 m/s²</p>
+          <p><b>Área da superfície:</b> 6,142 × 10^10 km²</p>
+          <p><b>Raio:</b> 69.911 km</p>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-body uk-visible@m card your-element" data-tilt>
+          <h3 class="composicao">Composição</h3>
+          <p>Júpiter é composto principalmente de hidrogênio, sendo um quarto de sua massa composta de hélio,
+            embora o hélio corresponda a apenas um décimo do número total de moléculas.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+
+  <script src="js/vanilla-tilt.js"></script>
+
+
+
+  <script src="js/stars.js"></script>
+  <script src="js/mouse-move.js"></script>
+  <script src="js/page-transition.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js"
+    integrity="sha512-OZ9Sq7ecGckkqgxa8t/415BRNoz2GIInOsu8Qjj99r9IlBCq2XJlm9T9z//D4W1lrl+xCdXzq0EYfMo8DZJ+KA=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit-icons.min.js"
+    integrity="sha512-hcz3GoZLfjU/z1OyArGvM1dVgrzpWcU3jnYaC6klc2gdy9HxrFkmoWmcUYbraeS+V/GWSgfv6upr9ff4RVyQPw=="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
