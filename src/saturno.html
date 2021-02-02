@@ -53,7 +53,8 @@
         transform: translateX(-100px) rotate(550deg);
       }
     }
-    @media (max-width: 770px){
+
+    @media (max-width: 770px) {
       @keyframes animateAsteroide {
         0% {
           top: -50px;
@@ -85,7 +86,7 @@
       }
     }
 
-    @media (max-width: 550px){
+    @media (max-width: 550px) {
       @keyframes animateAsteroide {
         0% {
           top: -50px;
@@ -153,6 +154,8 @@
 <body>
 
   <div class="transition transition-1 is-active"></div>
+
+  <div class="cursor"></div>
 
   <div id="stars" class="scene mouse-move" data-speed="3"></div>
 
@@ -255,7 +258,7 @@
   <script src="js/vanilla-tilt.js"></script>
 
 
-
+  <script src="js/cursor.js"></script>
   <script src="js/stars.js"></script>
   <script src="js/mouse-move.js"></script>
   <script src="js/page-transition.js"></script>

@@ -1276,4 +1276,31 @@ body {
     opacity: 0;
   }
 }
+
+.cursor {
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition-property: background, -webkit-transform;
+  transition-property: background, -webkit-transform;
+  transition-property: background, transform;
+  transition-property: background, transform, -webkit-transform;
+  -webkit-transform-origin: 75% 75%;
+          transform-origin: 75% 75%;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+
+.link-grow {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  background: #fff;
+}
 /*# sourceMappingURL=style.css.map */

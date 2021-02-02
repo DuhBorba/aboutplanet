@@ -875,3 +875,23 @@ left: 0; right: 0;
     opacity: 0;
   }
 }
+
+.cursor{
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5s ease;
+  transition-property: background, transform;
+  transform-origin: 75% 75%;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+
+.link-grow{
+  transform: scale(3);
+  background: #fff;
+}
