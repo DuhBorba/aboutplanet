@@ -31,59 +31,81 @@
 
   <div class="cursor uk-visible@s"></div>
 
-  <div id="stars" class="scene mouse-move" data-speed="3"></div>
+  <div id="stars" class="scene mouse-move uk-visible@s" data-speed="3"></div>
 
-  <header class=" uk-container uk-position-relative uk-position-z-indexs">
-    <div class="btn-header uk-visible@s">
+  <div class="bg-stars uk-hidden@s"></div>
+
+  <header class=" uk-container uk-position-relative uk-position-z-index">
+    <div class="btn-header uk-visible@s cursor-hover">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
     <div class="btn-header uk-hidden@s">
       <a onClick="history.go(-1)">◄</a> <!-- ◄ ► -->
     </div>
-    <div class="btn-header uk-visible@s">
+    <div class="btn-header uk-visible@s cursor-hover">
       <a href="sol.html">Próximo ►</a> <!-- ◄ ► -->
     </div>
     <div class="btn-header uk-hidden@s">
       <a href="sol.html">►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
-      <img src="img/logo-white.png" alt="Logo About Planet" />
+      <a href="index.html"> <img src="img/logo-white.png" alt="Logo About Planet" class="cursor-hover" /></a>
     </div>
   </header>
 
   <section class="sistema-solar">
-    <div class="sol"></div>
 
-    <div class="mercurio">
-      <img src="img/mercurio.png" alt="Mercurio">
-    </div>
+    <a href="netuno.html">
+      <div class="netuno">
+        <img src="img/netuno.png" alt="Netuno" class="cursor-hover">
+      </div>
+    </a>
 
-    <div class="venus">
-      <img src="img/venus.png" alt="Venus">
-    </div>
+    <a href="urano.html">
+      <div class="urano">
+        <img src="img/urano.png" alt="Urano" class="cursor-hover">
+      </div>
+    </a>
 
-    <div class="terra">
-      <img src="img/terra.png" alt="Terra">
-    </div>
+    <a href="saturno.html">
+      <div class="saturno">
+        <img src="img/saturno.png" alt="Saturno" class="cursor-hover">
+      </div>
+    </a>
 
-    <div class="marte">
-      <img src="img/marte.png" alt="Marte">
-    </div>
+    <a href="jupiter.html">
+      <div class="jupiter">
+        <img src="img/jupiter.png" alt="Jupiter" class="cursor-hover">
+      </div>
+    </a>
 
-    <div class="jupiter">
-      <img src="img/jupiter.png" alt="Jupiter">
-    </div>
-    <div class="saturno">
-      <img src="img/saturno.png" alt="Saturno">
-    </div>
+    <a href="marte.html">
+      <div class="marte">
+        <img src="img/marte.png" alt="Marte" class="cursor-hover">
+      </div>
+    </a>
 
-    <div class="urano">
-      <img src="img/urano.png" alt="Urano">
-    </div>
+    <a href="terra.html">
+      <div class="terra">
+        <img src="img/terra.png" alt="Terra" class="cursor-hover">
+      </div>
+    </a>
 
-    <div class="netuno">
-      <img src="img/netuno.png" alt="Netuno">
-    </div>
+    <a href="venus.html">
+      <div class="venus">
+        <img src="img/venus.png" alt="Venus" class="cursor-hover">
+      </div>
+    </a>
+
+    <a href="mercurio.html">
+      <div class="mercurio">
+        <img src="img/mercurio.png" alt="Mercurio" class="cursor-hover">
+      </div>
+    </a>
+
+    <a href="sol.html" class="cursor-hover">
+      <div class="sol"></div>
+    </a>
 
   </section>
 

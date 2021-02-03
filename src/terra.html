@@ -31,33 +31,35 @@
 
   <div class="cursor uk-visible@s"></div>
 
-  <div id="stars" class="scene mouse-move" data-speed="3"></div>
+  <div id="stars" class="scene mouse-move uk-visible@s" data-speed="3"></div>
 
-  <div class="about-sol mouse-move uk-position-absolute" style="height: 300px; width: 300px;top: 25%;right: 85%;"
-    data-speed="0.5"></div>
-  <div class="about-mercurio mouse-move uk-position-absolute uk-position-z-index"
-    style="height: 20px; width: 20px;top: 48%;left: 6.5%;" data-speed="0"><img src="img/mercurio.png" alt="Mercúrio">
-  </div>
-  <div class="about-venus mouse-move uk-position-absolute uk-position-z-index"
-    style="height: 40px; width: 40px;top: 50%;left: 7%;" data-speed="0.5"><img src="img/venus.png" alt="Vênus"></div>
-  <div class="about-terra mouse-move uk-position-absolute uk-position-z-index" data-speed="-1"><img src="img/terra.png"
-      alt="Terra"></div>
+  <div class="bg-stars uk-hidden@s"></div>
+
+  <div class="about-sol mouse-move uk-position-absolute uk-visible@s" style="height: 300px; width: 300px;top: 25%;right: 85%;" data-speed="0.5"></div>
+  <div class="about-mercurio mouse-move uk-position-absolute uk-position-z-index uk-visible@s" style="height: 20px; width: 20px;top: 48%;left: 6.5%;" data-speed="0"><img src="img/mercurio.png" alt="Mercúrio"></div>
+  <div class="about-venus mouse-move uk-position-absolute uk-position-z-index uk-visible@s" style="height: 40px; width: 40px;top: 50%;left: 7%;" data-speed="0.5"><img src="img/venus.png" alt="Vênus"></div>
+  <div class="about-terra mouse-move uk-position-absolute uk-position-z-index uk-visible@s" data-speed="-1"><img src="img/terra.png" alt="Terra"></div>
+  
+  <div class="about-sol uk-position-absolute uk-hidden@s" style="height: 300px; width: 300px;top: 25%;right: 85%;"></div>
+  <div class="about-mercurio uk-position-absolute uk-position-z-index uk-hidden@s" style="height: 20px; width: 20px;top: 48%;left: 6.5%;"><img src="img/mercurio.png" alt="Mercúrio"></div>
+  <div class="about-venus uk-position-absolute uk-position-z-index uk-hidden@s" style="height: 40px; width: 40px;top: 50%;left: 7%;"><img src="img/venus.png" alt="Vênus"></div>
+  <div class="about-terra uk-position-absolute uk-position-z-index uk-hidden@s"><img src="img/terra.png" alt="Terra"></div>
 
   <header class=" uk-container uk-position-relative uk-position-z-index">
-    <div class="btn-header uk-visible@s">
+    <div class="btn-header uk-visible@s cursor-hover">
       <a onClick="history.go(-1)">◄ Voltar</a> <!-- ◄ ► -->
     </div>
     <div class="btn-header uk-hidden@s">
       <a onClick="history.go(-1)">◄</a> <!-- ◄ ► -->
     </div>
-    <div class="btn-header uk-visible@s">
+    <div class="btn-header uk-visible@s cursor-hover">
       <a href="marte.html">Próximo ►</a> <!-- ◄ ► -->
     </div>
     <div class="btn-header uk-hidden@s">
       <a href="marte.html">►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
-      <img src="img/logo-white.png" alt="Logo About Planet" />
+      <a href="index.html"> <img src="img/logo-white.png" alt="Logo About Planet" class="cursor-hover"/></a>
     </div>
   </header>
 
@@ -65,8 +67,16 @@
 
     <div class="uk-child-width-1-3@m uk-padding-large uk-position-absolute uk-position-z-index cards" uk-grid>
 
-      <div>
-        <div class="uk-card uk-card-default uk-card-body card your-element" data-tilt>
+      <div class="uk-visible@s">
+        <div class="uk-card uk-card-default uk-card-body card your-element cursor-hover" data-tilt>
+          <h3 class="uk-card-title">Terra</h3>
+          <p>A Terra é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do
+            Sistema Solar.
+            É também o maior dos quatro planetas telúricos. É por vezes designada como Mundo ou Planeta Azul.</p>
+        </div>
+      </div>
+      <div class="uk-hidden@s">
+        <div class="uk-card uk-card-default uk-card-body card">
           <h3 class="uk-card-title">Terra</h3>
           <p>A Terra é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do
             Sistema Solar.
@@ -74,7 +84,7 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element"
+        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element cursor-hover"
           data-tilt data-tilt-glare data-tilt-max-glare="0.5">
           <p><b>Idade: </b> 4,543 × 10^9 anos</p>
           <p><b>Duração do dia:</b> 23h 59m 59s</p>
@@ -85,7 +95,7 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-body uk-visible@m card your-element" data-tilt>
+        <div class="uk-card uk-card-default uk-card-body uk-visible@m card your-element cursor-hover" data-tilt>
           <h3 class="composicao">Composição</h3>
           <p>A sua composição se dá por diversos gases, sendo 78% da atmosfera terrestre constituído por nitrogênio, 21%
             por oxigênio, isso sem falar na composição de argônio.

@@ -49,7 +49,15 @@ body {
   left: 0;
   width: 100%;
   height: 65px;
+  z-index: -1;
   background: url("../img/base-logo.png") no-repeat top center;
+}
+
+.bg-stars {
+  background: url("../img/stars.jpg") no-repeat center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 @-webkit-keyframes float {
@@ -1273,7 +1281,7 @@ body {
 
 @media (max-width: 860px) {
   .asteroides-2 {
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -1302,5 +1310,26 @@ body {
   -webkit-transform: scale(3);
           transform: scale(3);
   background: #fff;
+}
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #4bedc2;
+  width: 0%;
+  height: 100%;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */
