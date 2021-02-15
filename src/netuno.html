@@ -15,6 +15,7 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
@@ -151,6 +152,10 @@
 
 </head>
 
+<div class="container">
+  <div id="loader"></div>
+</div>
+
 <body>
 
   <div class="transition transition-1 is-active"></div>
@@ -161,15 +166,22 @@
 
   <div class="bg-stars uk-hidden@s"></div>
 
-  <div class="about-sol mouse-move uk-position-absolute uk-visible@s" style="height: 10px; width: 10px;top: 30%;right: 97%;" data-speed="0.1"></div>
-  <div class="about-venus mouse-move uk-position-absolute uk-visible@s" style="height: 1px; width: 1px;top: 29.3%;left: 2.7%;" data-speed="0.1"><img src="img/venus.webp" alt="Vênus"></div>
-  <div class="about-terra mouse-move uk-position-absolute uk-visible@s" style="height: 5px; width: 5px;top: 30%;left: 2.7%;" data-speed="-0.1"><img src="img/terra.webp" alt="Terra"></div>
-  <div class="about-marte mouse-move uk-position-absolute uk-visible@s" style="height: 10px; width: 10px;top: 31%;left: 3%;" data-speed="0.1"><img src="img/marte.webp" alt="Marte"></div>
-  
+  <div class="about-sol mouse-move uk-position-absolute uk-visible@s"
+    style="height: 10px; width: 10px;top: 30%;right: 97%;" data-speed="0.1"></div>
+  <div class="about-venus mouse-move uk-position-absolute uk-visible@s"
+    style="height: 1px; width: 1px;top: 29.3%;left: 2.7%;" data-speed="0.1"><img src="img/venus.webp" alt="Vênus"></div>
+  <div class="about-terra mouse-move uk-position-absolute uk-visible@s"
+    style="height: 5px; width: 5px;top: 30%;left: 2.7%;" data-speed="-0.1"><img src="img/terra.webp" alt="Terra"></div>
+  <div class="about-marte mouse-move uk-position-absolute uk-visible@s"
+    style="height: 10px; width: 10px;top: 31%;left: 3%;" data-speed="0.1"><img src="img/marte.webp" alt="Marte"></div>
+
   <div class="about-sol uk-position-absolute uk-hidden@s" style="height: 10px; width: 10px;top: 30%;right: 97%;"></div>
-  <div class="about-venus uk-position-absolute uk-hidden@s" style="height: 1px; width: 1px;top: 29.3%;left: 2.7%;"><img src="img/venus.webp" alt="Vênus"></div>
-  <div class="about-terra uk-position-absolute uk-hidden@s" style="height: 5px; width: 5px;top: 30%;left: 2.7%;"><img src="img/terra.webp" alt="Terra"></div>
-  <div class="about-marte uk-position-absolute uk-hidden@s" style="height: 10px; width: 10px;top: 31%;left: 3%;"><img src="img/marte.webp" alt="Marte"></div>
+  <div class="about-venus uk-position-absolute uk-hidden@s" style="height: 1px; width: 1px;top: 29.3%;left: 2.7%;"><img
+      src="img/venus.webp" alt="Vênus"></div>
+  <div class="about-terra uk-position-absolute uk-hidden@s" style="height: 5px; width: 5px;top: 30%;left: 2.7%;"><img
+      src="img/terra.webp" alt="Terra"></div>
+  <div class="about-marte uk-position-absolute uk-hidden@s" style="height: 10px; width: 10px;top: 31%;left: 3%;"><img
+      src="img/marte.webp" alt="Marte"></div>
 
   <div class="asteroides uk-position-z-index">
     <div><img src="img/asteroide-normal.webp" alt="Asteróide" style="height: 4px;"></div>
@@ -191,15 +203,24 @@
     <div><img src="img/asteroide-normal.webp" alt="Asteróide" style="height: 7px;"></div>
   </div>
 
-  <div class="about-jupiter mouse-move uk-position-absolute uk-position-z-index uk-visible@s" style="height: 30px; width: 30px;top: 32.5%;left: 2.8%;" data-speed="-0.1"><img src="img/jupiter.webp" alt="Júpiter"></div>
-  <div class="about-saturno mouse-move uk-position-absolute uk-position-z-index uk-visible@s" style="width: 70px;top: 35%;left: 2.8%;" data-speed="0.2"><img src="img/saturno.webp" alt="Saturno"></div>
-  <div class="about-urano mouse-move uk-position-absolute uk-position-z-index uk-visible@s" style="width: 45px;top: 37%;left: 5%;" data-speed="-0.2"><img src="img/urano.webp" alt="Urano"></div>
-  <div class="about-netuno mouse-move uk-position-absolute uk-position-z-index uk-visible@s" data-speed="0.3"><img src="img/netuno.webp" alt="Netuno"></div>
-  
-  <div class="about-jupiter uk-position-absolute uk-position-z-index uk-hidden@s" style="height: 30px; width: 30px;top: 32.5%;left: 2.8%;"><img src="img/jupiter.webp" alt="Júpiter"></div>
-  <div class="about-saturno uk-position-absolute uk-position-z-index uk-hidden@s" style="width: 70px;top: 35%;left: 2.8%;"><img src="img/saturno.webp" alt="Saturno"></div>
-  <div class="about-urano uk-position-absolute uk-position-z-index uk-hidden@s" style="width: 45px;top: 37%;left: 5%;"><img src="img/urano.webp" alt="Urano"></div>
-  <div class="about-netuno uk-position-absolute uk-position-z-index uk-hidden@s"><img src="img/netuno.webp" alt="Netuno"></div>
+  <div class="about-jupiter mouse-move uk-position-absolute uk-position-z-index uk-visible@s"
+    style="height: 30px; width: 30px;top: 32.5%;left: 2.8%;" data-speed="-0.1"><img src="img/jupiter.webp"
+      alt="Júpiter"></div>
+  <div class="about-saturno mouse-move uk-position-absolute uk-position-z-index uk-visible@s"
+    style="width: 70px;top: 35%;left: 2.8%;" data-speed="0.2"><img src="img/saturno.webp" alt="Saturno"></div>
+  <div class="about-urano mouse-move uk-position-absolute uk-position-z-index uk-visible@s"
+    style="width: 45px;top: 37%;left: 5%;" data-speed="-0.2"><img src="img/urano.webp" alt="Urano"></div>
+  <div class="about-netuno mouse-move uk-position-absolute uk-position-z-index uk-visible@s" data-speed="0.3"><img
+      src="img/netuno.webp" alt="Netuno"></div>
+
+  <div class="about-jupiter uk-position-absolute uk-position-z-index uk-hidden@s"
+    style="height: 30px; width: 30px;top: 32.5%;left: 2.8%;"><img src="img/jupiter.webp" alt="Júpiter"></div>
+  <div class="about-saturno uk-position-absolute uk-position-z-index uk-hidden@s"
+    style="width: 70px;top: 35%;left: 2.8%;"><img src="img/saturno.webp" alt="Saturno"></div>
+  <div class="about-urano uk-position-absolute uk-position-z-index uk-hidden@s" style="width: 45px;top: 37%;left: 5%;">
+    <img src="img/urano.webp" alt="Urano"></div>
+  <div class="about-netuno uk-position-absolute uk-position-z-index uk-hidden@s"><img src="img/netuno.webp"
+      alt="Netuno"></div>
 
   <header class=" uk-container uk-position-relative uk-position-z-index">
     <div class="btn-header uk-visible@s cursor-hover">
@@ -238,7 +259,8 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element cursor-hover"
+        <div
+          class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element cursor-hover"
           data-tilt data-tilt-glare data-tilt-max-glare="0.5">
           <p><b>Idade:</b> 4,503 × 10^9 anos</p>
           <p><b>Duração do dia:</b> 0d 16h 6m</p>
@@ -262,7 +284,12 @@
 
   </section>
 
-
+  <script>
+    $(window).on('load', function () {
+      $('#loader .inner').fadeOut();
+      $('#loader').fadeOut('slow');
+    })
+  </script>
 
   <script src="js/vanilla-tilt.js"></script>
 

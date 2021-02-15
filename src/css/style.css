@@ -1332,4 +1332,22 @@ body {
   z-index: 10;
   pointer-events: none;
 }
+
+#loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: url("../img/loader.gif") no-repeat center;
+  background-size: 250px;
+  z-index: 1000;
+}
+
+@media (max-width: 640px) {
+  #loader {
+    background-size: 100px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

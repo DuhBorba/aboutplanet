@@ -15,6 +15,7 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
@@ -24,6 +25,10 @@
   <link href="css/style.css" rel="stylesheet" />
 
 </head>
+
+<div class="container">
+  <div id="loader"></div>
+</div>
 
 <body>
 
@@ -35,16 +40,26 @@
 
   <div class="bg-stars uk-hidden@s"></div>
 
-  <div class="about-sol mouse-move uk-position-absolute uk-visible@s" style="height: 200px; width: 200px;top: 25%;right: 90%;" data-speed="0.5"></div>
-  <div class="about-mercurio mouse-move uk-position-absolute uk-visible@s" style="height: 10px; width: 10px;top: 40%;left: 6%;" data-speed="0"><img src="img/mercurio.webp" alt="Mercúrio"></div>
-  <div class="about-venus mouse-move uk-position-absolute uk-visible@s" style="height: 30px; width: 30px;top: 42%;left: 6%;" data-speed="0.5"><img src="img/venus.webp" alt="Vênus"></div>
-  <div class="about-terra mouse-move uk-position-absolute uk-visible@s" style="height: 40px; width: 40px;top: 45%;left: 6%;" data-speed="0"><img src="img/terra.webp" alt="Terra"></div>
-  <div class="about-marte mouse-move uk-position-absolute uk-visible@s" data-speed="1"><img src="img/marte.webp" alt="Marte"></div>
-  
-  <div class="about-sol uk-position-absolute uk-hidden@s" style="height: 200px; width: 200px;top: 25%;right: 90%;"></div>
-  <div class="about-mercurio uk-position-absolute uk-hidden@s" style="height: 10px; width: 10px;top: 40%;left: 6%;"><img src="img/mercurio.webp" alt="Mercúrio"></div>
-  <div class="about-venus uk-position-absolute uk-hidden@s" style="height: 30px; width: 30px;top: 42%;left: 6%;"><img src="img/venus.webp" alt="Vênus"></div>
-  <div class="about-terra uk-position-absolute uk-hidden@s" style="height: 40px; width: 40px;top: 45%;left: 6%;"><img src="img/terra.webp" alt="Terra"></div>
+  <div class="about-sol mouse-move uk-position-absolute uk-visible@s"
+    style="height: 200px; width: 200px;top: 25%;right: 90%;" data-speed="0.5"></div>
+  <div class="about-mercurio mouse-move uk-position-absolute uk-visible@s"
+    style="height: 10px; width: 10px;top: 40%;left: 6%;" data-speed="0"><img src="img/mercurio.webp" alt="Mercúrio">
+  </div>
+  <div class="about-venus mouse-move uk-position-absolute uk-visible@s"
+    style="height: 30px; width: 30px;top: 42%;left: 6%;" data-speed="0.5"><img src="img/venus.webp" alt="Vênus"></div>
+  <div class="about-terra mouse-move uk-position-absolute uk-visible@s"
+    style="height: 40px; width: 40px;top: 45%;left: 6%;" data-speed="0"><img src="img/terra.webp" alt="Terra"></div>
+  <div class="about-marte mouse-move uk-position-absolute uk-visible@s" data-speed="1"><img src="img/marte.webp"
+      alt="Marte"></div>
+
+  <div class="about-sol uk-position-absolute uk-hidden@s" style="height: 200px; width: 200px;top: 25%;right: 90%;">
+  </div>
+  <div class="about-mercurio uk-position-absolute uk-hidden@s" style="height: 10px; width: 10px;top: 40%;left: 6%;"><img
+      src="img/mercurio.webp" alt="Mercúrio"></div>
+  <div class="about-venus uk-position-absolute uk-hidden@s" style="height: 30px; width: 30px;top: 42%;left: 6%;"><img
+      src="img/venus.webp" alt="Vênus"></div>
+  <div class="about-terra uk-position-absolute uk-hidden@s" style="height: 40px; width: 40px;top: 45%;left: 6%;"><img
+      src="img/terra.webp" alt="Terra"></div>
   <div class="about-marte uk-position-absolute uk-hidden@s" data-speed="1"><img src="img/marte.webp" alt="Marte"></div>
 
   <div class="asteroides uk-position-z-index">
@@ -108,7 +123,8 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element cursor-hover"
+        <div
+          class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element cursor-hover"
           data-tilt data-tilt-glare data-tilt-max-glare="0.5">
           <p><b>Idade:</b> 4,603 × 10^9 anos</p>
           <p><b>Duração do dia:</b> 1d 0h 37m</p>
@@ -140,6 +156,13 @@
     }
     $(window).bind('scroll', setTopo);
     setTopo();
+  </script>
+
+  <script>
+    $(window).on('load', function () {
+      $('#loader .inner').fadeOut();
+      $('#loader').fadeOut('slow');
+    })
   </script>
 
 

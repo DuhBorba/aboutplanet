@@ -15,6 +15,7 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
@@ -24,6 +25,10 @@
   <link href="css/style.css" rel="stylesheet" />
 
 </head>
+
+<div class="container">
+  <div id="loader"></div>
+</div>
 
 <body>
 
@@ -35,15 +40,24 @@
 
   <div class="bg-stars uk-hidden@s"></div>
 
-  <div class="about-sol mouse-move uk-position-absolute uk-visible@s" style="height: 300px; width: 300px;top: 25%;right: 85%;" data-speed="0.5"></div>
-  <div class="about-mercurio mouse-move uk-position-absolute uk-position-z-index uk-visible@s" style="height: 20px; width: 20px;top: 48%;left: 6.5%;" data-speed="0"><img src="img/mercurio.webp" alt="Mercúrio"></div>
-  <div class="about-venus mouse-move uk-position-absolute uk-position-z-index uk-visible@s" style="height: 40px; width: 40px;top: 50%;left: 7%;" data-speed="0.5"><img src="img/venus.webp" alt="Vênus"></div>
-  <div class="about-terra mouse-move uk-position-absolute uk-position-z-index uk-visible@s" data-speed="-1"><img src="img/terra.webp" alt="Terra"></div>
-  
-  <div class="about-sol uk-position-absolute uk-hidden@s" style="height: 300px; width: 300px;top: 25%;right: 85%;"></div>
-  <div class="about-mercurio uk-position-absolute uk-position-z-index uk-hidden@s" style="height: 20px; width: 20px;top: 48%;left: 6.5%;"><img src="img/mercurio.webp" alt="Mercúrio"></div>
-  <div class="about-venus uk-position-absolute uk-position-z-index uk-hidden@s" style="height: 40px; width: 40px;top: 50%;left: 7%;"><img src="img/venus.webp" alt="Vênus"></div>
-  <div class="about-terra uk-position-absolute uk-position-z-index uk-hidden@s"><img src="img/terra.webp" alt="Terra"></div>
+  <div class="about-sol mouse-move uk-position-absolute uk-visible@s"
+    style="height: 300px; width: 300px;top: 25%;right: 85%;" data-speed="0.5"></div>
+  <div class="about-mercurio mouse-move uk-position-absolute uk-position-z-index uk-visible@s"
+    style="height: 20px; width: 20px;top: 48%;left: 6.5%;" data-speed="0"><img src="img/mercurio.webp" alt="Mercúrio">
+  </div>
+  <div class="about-venus mouse-move uk-position-absolute uk-position-z-index uk-visible@s"
+    style="height: 40px; width: 40px;top: 50%;left: 7%;" data-speed="0.5"><img src="img/venus.webp" alt="Vênus"></div>
+  <div class="about-terra mouse-move uk-position-absolute uk-position-z-index uk-visible@s" data-speed="-1"><img
+      src="img/terra.webp" alt="Terra"></div>
+
+  <div class="about-sol uk-position-absolute uk-hidden@s" style="height: 300px; width: 300px;top: 25%;right: 85%;">
+  </div>
+  <div class="about-mercurio uk-position-absolute uk-position-z-index uk-hidden@s"
+    style="height: 20px; width: 20px;top: 48%;left: 6.5%;"><img src="img/mercurio.webp" alt="Mercúrio"></div>
+  <div class="about-venus uk-position-absolute uk-position-z-index uk-hidden@s"
+    style="height: 40px; width: 40px;top: 50%;left: 7%;"><img src="img/venus.webp" alt="Vênus"></div>
+  <div class="about-terra uk-position-absolute uk-position-z-index uk-hidden@s"><img src="img/terra.webp" alt="Terra">
+  </div>
 
   <header class=" uk-container uk-position-relative uk-position-z-index">
     <div class="btn-header uk-visible@s cursor-hover">
@@ -59,7 +73,7 @@
       <a href="marte.html">►</a> <!-- ◄ ► -->
     </div>
     <div class="uk-text-center logo-header">
-      <a href="index.html"> <img src="img/logo-white.webp" alt="Logo About Planet" class="cursor-hover"/></a>
+      <a href="index.html"> <img src="img/logo-white.webp" alt="Logo About Planet" class="cursor-hover" /></a>
     </div>
   </header>
 
@@ -84,7 +98,8 @@
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element cursor-hover"
+        <div
+          class="uk-card uk-card-default uk-card-large uk-card-body uk-visible@m card card-info your-element cursor-hover"
           data-tilt data-tilt-glare data-tilt-max-glare="0.5">
           <p><b>Idade: </b> 4,543 × 10^9 anos</p>
           <p><b>Duração do dia:</b> 23h 59m 59s</p>
@@ -108,7 +123,12 @@
 
   </section>
 
-
+  <script>
+    $(window).on('load', function () {
+      $('#loader .inner').fadeOut();
+      $('#loader').fadeOut('slow');
+    })
+  </script>
 
   <script src="js/vanilla-tilt.js"></script>
 
